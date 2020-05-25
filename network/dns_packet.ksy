@@ -39,6 +39,11 @@ seq:
     type: answer
     repeat: expr
     repeat-expr: ancount
+  - id: additional
+    if: flags.is_opcode_valid
+    type: answer
+    repeat: expr
+    repeat-expr: arcount
 types:
   query:
     seq: 
